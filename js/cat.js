@@ -38,6 +38,11 @@ function goForward()
 	}
 }
 
+function goBack()
+{
+	//TODO
+}
+
 function goUp()
 {
 	var kat = document.getElementById('katnis');
@@ -57,4 +62,9 @@ function canGoForward()
 	var kat = document.getElementById('katnis');
 	var right = (parseInt(kat.style.left) || 0) + parseInt(kat.width);
 	return right + stepX < window.innerWidth;
+}
+
+function canGoBack()
+{
+	//TODO
 }
